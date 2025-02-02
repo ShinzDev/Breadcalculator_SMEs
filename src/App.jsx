@@ -7,16 +7,16 @@ function App() {
   const [bigBread, setBigBread] = useState(0);
 
   // Prices
-  const SMALL_PRICE = 180;
-  const BIG_PRICE = 240;
+  const BUYING_SMALL_PRICE = 180;
+  const BUYING_BIG_PRICE = 240;
 
   //state for selling price 
   const SELLING_SMALL_PRICE = 200;
   const SELLING_BIG_PRICE = 280;
 
   // Calculate totals
-  const smallTotal = smallBread * SMALL_PRICE;
-  const bigTotal = bigBread * BIG_PRICE;
+  const buyingSmallTotal = smallBread * BUYING_SMALL_PRICE;
+  const buyingBigTotal = bigBread * BUYING_BIG_PRICE;
   const grandTotal = smallTotal + bigTotal;
 
   return (
@@ -44,8 +44,8 @@ function App() {
       </div>
 
       <div className="results">
-        <p>Small Bread Total: {smallTotal} </p>
-        <p>Big Bread Total: {bigTotal} </p>
+        <p>Small Bread Total: {buyingSmallTotal} </p>
+        <p>Big Bread Total: {buyingBigTotal} </p>
         <h2>Grand Total: {grandTotal}</h2>
       </div>
     </div>
